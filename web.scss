@@ -1,0 +1,393 @@
+// $blue: #6f7a8a;
+$blue: #4a5166;
+$green: #00d646;
+$grey: rgb(200, 200, 200);
+$lgrey: #bec7d5; // for text
+
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #50576c;
+}
+
+.background {
+  background-image: url(./images/mountain.webp);
+  height: 3600px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background::before {
+  background-color: rgba(0, 11, 44, 0.637);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.background_wrapper {
+  width: calc(100% - 250px);
+  position: absolute;
+  top: 0;
+  left: 250px;
+}
+
+.nav {
+  height: 100vh;
+  width: 250px;
+  background-color: $blue;
+  position: fixed;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.profile_photo {
+  background-image: url(./images/profile_photo2.png);
+  background-color: #3892a193;
+  // background-color:#00d647fb;
+  height: 600px;
+  width: 600px;
+  background-size: cover;
+  border-radius: 500px;
+  position: absolute;
+  right: 5%;
+  // top: -6%;
+}
+
+.profile_photo::before {
+  background-color: rgba(74, 81, 100, 0.521);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  // border-radius: 400px;
+}
+
+.menu {
+  list-style-type: none; /* Remove bullets */
+  color: rgb(201, 201, 201);
+  font-size: 20px;
+}
+
+.content {
+  position: relative;
+  left: 250px;
+  width: calc(100% - 250px);
+  overflow: hidden;
+}
+
+// -------- about me --------
+.about_me {
+  height: 100vh;
+  width: 100%;
+  background-color: $blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about_text_wrapper {
+  margin-left: 10%;
+}
+
+.title {
+  color: #fff;
+  font-size: 65px;
+  font-weight: bold;
+}
+
+.title span {
+  color: $green;
+}
+
+.intro {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 18px;
+  width: 45%;
+
+  // position用來蓋住旁邊照片
+  position: relative;
+  z-index: 10;
+}
+
+// -------- experience --------
+.experience {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.page {
+  font-size: 42px;
+  font-weight: bold;
+  color: #fff;
+  // width: 100%;
+  // margin-left: 10%;
+  margin-top: 5%;
+}
+
+.page span {
+  color: $lgrey;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: row;
+  // width: 90%;
+  padding: 5%;
+  padding-top: 2%;
+  justify-content: center;
+}
+
+.date {
+  color: $green;
+}
+
+.exp_title {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.exp_content {
+  color: $lgrey;
+}
+
+.left {
+  width: 35%;
+}
+
+.left .exp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 194px;
+}
+
+.mid {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background-color: $green;
+}
+
+.line {
+  width: 1.5px;
+  height: 180px;
+  background-color: $green;
+}
+
+.right {
+  width: 35%;
+}
+
+.exp:first-child {
+  margin-bottom: 42%;
+}
+
+// --------- skills ---------
+.skills {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills_content {
+  padding: 5%;
+  padding-top: 2%;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skill-icon {
+  background-color: $green;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  text-align: center;
+  position: absolute;
+  top: -25px;
+  left: 85px;
+}
+
+.skill-icon i {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.skill_box {
+  background-color: #262a3652;
+  height: 300px;
+  width: 220px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.skill_title {
+  font-size: 20px;
+  color: #fff;
+  line-height: 40px;
+  margin-top: 10px;
+}
+
+.skill-items {
+  color: $lgrey;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.skill-items i {
+  color: $green;
+}
+
+// -------- projects --------
+.projects {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project_content {
+  margin: 5%;
+  height: 500px;
+  width: 1080px;
+  // background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  width: 5000px;
+  // background-color: $blue;
+}
+
+.custom_card {
+  margin: 30px;
+  height: auto;
+  width: 300px;
+  background-color: #262a3652;
+  border-radius: calc(0.25rem - 1px);
+}
+
+.card-title {
+  color: #fff;
+  // margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+.skills_used {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills_used div {
+  color: $lgrey;
+  border: 1.5px solid $lgrey;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 8px;
+  margin: 5px;
+}
+
+.arrows {
+  color: $lgrey;
+  font-size: 36px;
+  position: absolute;
+  top: 430px;
+  left: 46.5%;
+}
+
+.arrows :hover {
+  color: $green;
+}
+
+// -------- contact --------
+.contact {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // background-color: #fff;
+}
+
+.contact .page {
+  margin-top: 0;
+}
+
+.contact_content {
+  background-color: #f1f1f1;
+  height: 300px;
+  width: 500px;
+  color: $blue;
+  position: relative;
+  margin-top: 50px;
+  box-shadow: 10px 11px 23px 0px rgba(17, 17, 17, 0.42);
+}
+
+.contact .info {
+  color: #858ca0;
+}
+
+.icons {
+  position: absolute;
+  background-color: $blue;
+  height: 100%;
+  width: 80px;
+  top: 0;
+  left: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.icons i {
+  color: $lgrey;
+  font-size: 30px;
+}
