@@ -60,6 +60,12 @@ function carouselSlideLeft() {
   if (carouselPage === 2) {
     carousel.style.left = "0";
     carouselPage = 1;
+    document
+      .querySelector(".fa-chevron-left")
+      .classList.add("remove_hover_style");
+    document
+      .querySelector(".fa-chevron-right")
+      .classList.remove("remove_hover_style");
   }
 }
 
@@ -67,6 +73,12 @@ function carouselSlideRight() {
   if (carouselPage === 1) {
     carousel.style.left = "-330px";
     carouselPage = 2;
+    document
+      .querySelector(".fa-chevron-left")
+      .classList.remove("remove_hover_style");
+    document
+      .querySelector(".fa-chevron-right")
+      .classList.add("remove_hover_style");
   }
 }
 

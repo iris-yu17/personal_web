@@ -177,11 +177,12 @@ $lgrey: #bec7d5; // for text
 
 .date {
   color: $green;
+  font-size: 18px;
 }
 
 .exp_title {
   color: #fff;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -381,6 +382,15 @@ $lgrey: #bec7d5; // for text
   cursor: pointer;
 }
 
+// .arrows .stop{
+//   color: $lgrey;
+// }
+
+.arrows .remove_hover_style:hover{
+  color:  $lgrey;
+  cursor: default;
+}
+
 // -------- contact --------
 .contact {
   height: 100vh;
@@ -428,4 +438,9 @@ $lgrey: #bec7d5; // for text
 .icons i {
   color: $lgrey;
   font-size: 30px;
+}
+
+.icons i:hover {
+  color: $green;
+
 }
