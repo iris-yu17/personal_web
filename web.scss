@@ -313,13 +313,18 @@ $lgrey: #bec7d5; // for text
   overflow: hidden;
   display: flex;
   align-items: flex-start;
+
+  // relative to carousel
   position: relative;
 }
 
 .carousel {
   display: flex;
   width: 5000px;
-  // background-color: $blue;
+
+  position: absolute;
+  left: 0;
+  transition: 0.5s;
 }
 
 .custom_card {
@@ -328,6 +333,10 @@ $lgrey: #bec7d5; // for text
   width: 300px;
   background-color: #262a3652;
   border-radius: calc(0.25rem - 1px);
+}
+
+.custom_card img {
+  height: 180.6px;
 }
 
 .card-title {
@@ -347,12 +356,13 @@ $lgrey: #bec7d5; // for text
 .skills_used {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .skills_used div {
   color: $lgrey;
   border: 1.5px solid $lgrey;
-  font-size: 18px;
+  font-size: 16px;
   padding: 5px;
   border-radius: 8px;
   margin: 5px;
@@ -364,11 +374,11 @@ $lgrey: #bec7d5; // for text
   position: absolute;
   top: 430px;
   left: 46.5%;
-
 }
 
 .arrows :hover {
   color: $green;
+  cursor: pointer;
 }
 
 // -------- contact --------

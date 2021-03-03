@@ -377,6 +377,10 @@
   display: -ms-flexbox;
   display: flex;
   width: 5000px;
+  position: absolute;
+  left: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .custom_card {
@@ -385,6 +389,10 @@
   width: 300px;
   background-color: #262a3652;
   border-radius: calc(0.25rem - 1px);
+}
+
+.custom_card img {
+  height: 180.6px;
 }
 
 .card-title {
@@ -415,12 +423,15 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .skills_used div {
   color: #bec7d5;
   border: 1.5px solid #bec7d5;
-  font-size: 18px;
+  font-size: 16px;
   padding: 5px;
   border-radius: 8px;
   margin: 5px;
@@ -436,6 +447,7 @@
 
 .arrows :hover {
   color: #00d646;
+  cursor: pointer;
 }
 
 .contact {
