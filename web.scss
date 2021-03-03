@@ -4,8 +4,13 @@ $green: #00d646;
 $grey: rgb(200, 200, 200);
 $lgrey: #bec7d5; // for text
 
+@font-face {
+  font-family: "ShareTechMono";
+  src: url(./ShareTechMono-Regular.ttf) format("truetype");
+}
+
 .body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "ShareTechMono", Arial, Helvetica, sans-serif;
   background-color: #50576c;
 }
 
@@ -71,28 +76,29 @@ $lgrey: #bec7d5; // for text
 .menu {
   list-style-type: none; /* Remove bullets */
   color: rgb(201, 201, 201);
-  font-size: 20px;
+  font-size: 22px;
 
   // relative to bar
   position: relative;
 }
 
-.menu :hover{
+.menu :hover {
   color: #fff;
   cursor: pointer;
 }
 
-.menu_selected{
+.menu_selected {
   color: $green;
 }
 
-.bar{
+.bar {
   position: absolute;
   width: 5px;
-  height: 25px;
+  height: 30px;
   background-color: $green;
   top: 2px;
   left: -40px;
+  transition: all 0.5s;
 }
 
 .content {
@@ -281,7 +287,7 @@ $lgrey: #bec7d5; // for text
 
 .skill-items {
   color: $lgrey;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 32px;
 }
 
@@ -358,6 +364,7 @@ $lgrey: #bec7d5; // for text
   position: absolute;
   top: 430px;
   left: 46.5%;
+
 }
 
 .arrows :hover {
