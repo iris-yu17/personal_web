@@ -129,6 +129,8 @@
   color: #fff;
   font-size: 65px;
   font-weight: bold;
+  position: relative;
+  z-index: 10;
 }
 
 .title span {
@@ -140,6 +142,7 @@
   color: #fff;
   font-size: 18px;
   width: 45%;
+  font-weight: lighter;
   position: relative;
   z-index: 10;
 }
@@ -472,10 +475,23 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-image: url("./images/mountain.jpg");
+  background-size: contain;
+}
+
+.contact::before {
+  background-color: rgba(0, 11, 44, 0.605);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 400vh;
+  width: 100%;
 }
 
 .contact .page {
   margin-top: 0;
+  position: relative;
 }
 
 .contact_content {

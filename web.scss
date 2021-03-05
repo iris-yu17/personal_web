@@ -126,6 +126,10 @@ $lgrey: #bec7d5; // for text
   color: #fff;
   font-size: 65px;
   font-weight: bold;
+
+  // position用來蓋住旁邊照片
+  position: relative;
+  z-index: 10;
 }
 
 .title span {
@@ -137,6 +141,7 @@ $lgrey: #bec7d5; // for text
   color: #fff;
   font-size: 18px;
   width: 45%;
+  font-weight: lighter;
 
   // position用來蓋住旁邊照片
   position: relative;
@@ -386,8 +391,8 @@ $lgrey: #bec7d5; // for text
 //   color: $lgrey;
 // }
 
-.arrows .remove_hover_style:hover{
-  color:  $lgrey;
+.arrows .remove_hover_style:hover {
+  color: $lgrey;
   cursor: default;
 }
 
@@ -400,10 +405,25 @@ $lgrey: #bec7d5; // for text
   align-items: center;
   justify-content: center;
   // background-color: #fff;
+
+  background-image: url("./images/mountain.jpg");
+  background-size: contain;
+}
+
+
+.contact::before {
+  background-color: rgba(0, 11, 44, 0.605);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 400vh;
+  width: 100%;
 }
 
 .contact .page {
   margin-top: 0;
+  position: relative;
 }
 
 .contact_content {
@@ -442,5 +462,4 @@ $lgrey: #bec7d5; // for text
 
 .icons i:hover {
   color: $green;
-
 }
