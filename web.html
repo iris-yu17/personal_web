@@ -28,11 +28,11 @@
     <!-- 左半邊 -->
     <div class="nav">
       <div class="menu">
-        <div class="menu_selected menu_item">ABOUT ME</div>
-        <div class="menu_item">EXPERIENCE</div>
-        <div class="menu_item">SKILLS</div>
-        <div class="menu_item">PROJECTS</div>
-        <div class="menu_item">CONTACT</div>
+        <div class="menu_selected menu_item" id="menu_about_me">ABOUT ME</div>
+        <div class="menu_item" id="menu_experience">EXPERIENCE</div>
+        <div class="menu_item"  id="menu_skills">SKILLS</div>
+        <div class="menu_item"  id="menu_project">PROJECTS</div>
+        <div class="menu_item"  id="menu_contact">CONTACT</div>
         <div class="bar" id="bar"></div>
       </div>
     </div>
@@ -45,7 +45,7 @@
           <div class="title">this is Iris Yu<span>.</span></div>
           <div class="intro">
             我是余玟瑾，個性隨和樂觀，善於傾聽他人意見，虛心接受任何指教並時時改進自我。
-            <br>
+            <br />
             從國外業務轉職，於資策會結訓並持續學習精進中，瞭解基本前端開發工具並串接API，有使用React框架經驗。
           </div>
         </div>
@@ -59,7 +59,7 @@
               <div class="date">July 2019 - April 2020</div>
               <div class="exp_title">麥豐密封科技</div>
               <div class="exp_content">
-                畢業後即於麥豐密封科技擔任國外業務，工作內容主要為安排訂單、出貨，接待國外客戶、書信電話往來等。<br>
+                畢業後即於麥豐密封科技擔任國外業務，工作內容主要為安排訂單、出貨，接待國外客戶、書信電話往來等。<br />
                 工作細心認真，和客戶關係良好，離職時還受到客戶挽留。
               </div>
             </div>
@@ -76,14 +76,17 @@
               <div class="date">July 2020 - Nov 2020</div>
               <div class="exp_title">資策會前端工程師就業養成班</div>
               <div class="exp_content">
-                在資策會學習HTML / CSS / JavaScript 等前端技能，並在資策會結業專題，和組員共同協作，使用 React.js 以及 Node.js ，完成一個電商網站。負責其中會員系統的部分，包括登入、註冊頁面，會員相關的基本api撰寫及串接，會員頁面排版，以及最愛、留言功能...等。
+                在資策會學習HTML / CSS / JavaScript
+                等前端技能，並在資策會結業專題，和組員共同協作，使用 React.js
+                以及 Node.js
+                ，完成一個電商網站。負責其中會員系統的部分，包括登入、註冊頁面，會員相關的基本api撰寫及串接，會員頁面排版，以及最愛、留言功能...等。
               </div>
             </div>
             <div class="exp">
               <div class="date">Sept 2016 - June 2019</div>
               <div class="exp_title">東吳大學</div>
               <div class="exp_content">
-                就讀國際經營與貿易學系，大學期間便積極為未來職涯準備，考取了相關的國貿大會考、初級證券商業務員證照。<br>
+                就讀國際經營與貿易學系，大學期間便積極考取了相關的國貿大會考、初級證券商業務員證照、及語言證照等。<br />
                 語文方面考取多益成績890分，劍橋博思檢定C1，雖非頂尖，但聽說讀寫不成問題。
               </div>
             </div>
@@ -185,57 +188,81 @@
         <div class="project_content">
           <div class="carousel">
             <div class="custom_card">
-              <img
-                class="card-img"
-                src="./images/foodgo.png"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h5 class="card-title">電商網站</h5>
-                <div class="skills_used">
-                  <div>React</div>
-                  <div>node.js</div>
-                  <div>Javcscript</div>
-                  <div>Bootstrap</div>
-                  <div>MySQL</div>
+              <a
+                href="https://youtu.be/JphzJAEL2rI?t=3869"
+                target="_blank"
+                style="text-decoration: none"
+              >
+                <img
+                  class="card-img"
+                  src="./images/foodgo.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">電商網站</h5>
+                  <div class="skills_used">
+                    <div>React</div>
+                    <div>node.js</div>
+                    <div>Javcscript</div>
+                    <div>Bootstrap</div>
+                    <div>MySQL</div>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
 
             <div class="custom_card">
-              <img
-                class="card-img"
-                src="./images/todo.png"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Todo List App</h5>
-                <div class="skills_used">
-                  <div>Javcscript</div>
-                  <div>Bootstrap</div>
-                  <div>CSS</div>
-                  <div>jQuery</div>
+              <a
+                href="https://iris-yu17.github.io/todo_list/todo.html"
+                target="_blank"
+                style="text-decoration: none"
+              >
+                <img
+                  class="card-img"
+                  src="./images/todo.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Todo List App</h5>
+                  <div class="skills_used">
+                    <div>Javcscript</div>
+                    <div>Bootstrap</div>
+                    <div>CSS</div>
+                    <div>jQuery</div>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
 
             <div class="custom_card">
-              <img
-                class="card-img"
-                src="./images/instagram.jfif"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Instagram Clone</h5>
-                <div class="skills_used">
-                  <div>Javcscript</div>
-                  <div>Bootstrap</div>
-                  <div>CSS</div>
+              <a
+                href="https://9wqcw.csb.app/l"
+                target="_blank"
+                style="text-decoration: none"
+              >
+                <img
+                  class="card-img"
+                  src="./images/weather.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Weather App</h5>
+                  <div class="skills_used">
+                    <div>React</div>
+                    <div>Javcscript</div>
+                    <div>Bootstrap</div>
+                    <div>CSS</div>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
 
             <div class="custom_card">
+              <a
+              href="https://cdpn.io/iris-yu17/debug/zYqMVmN/gareYdBGnVmr"
+              target="_blank"
+              style="text-decoration: none"
+            >
               <img
                 class="card-img"
                 src="./images/game.png"
@@ -250,6 +277,7 @@
                 </div>
               </div>
             </div>
+          </a>
           </div>
 
           <div class="arrows">

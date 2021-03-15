@@ -32,11 +32,17 @@ function changeMenuItemStyle() {
   menuItem[page].classList.add("menu_selected");
 }
 
+
+$(window).on("scroll", function () {
+  y = $("#menu_contact").offset().top;
+  console.log(y);
+});
+
 // 按menu控制右邊畫面
 $(".menu_item").on("click", function (e) {
   let linkScroll;
   if (page === 0) {
-    linkScroll = $(".about_me").offset().top;
+    linkScroll = $(".about_me").offset().top; // $(".about_me")與最上方的距離
   } else if (page === 1) {
     linkScroll = $(".experience").offset().top;
   } else if (page === 2) {

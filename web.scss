@@ -102,7 +102,7 @@ $lgrey: #bec7d5; // for text
 }
 
 .content {
-  position: relative;
+  position: absolute;
   left: 250px;
   width: calc(100% - 250px);
   overflow: hidden;
@@ -409,7 +409,6 @@ $lgrey: #bec7d5; // for text
   background-image: url("./images/mountain.jpg");
   background-size: contain;
 }
-
 
 .contact::before {
   background-color: rgba(0, 11, 44, 0.605);
