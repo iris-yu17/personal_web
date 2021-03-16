@@ -5,6 +5,7 @@ const leftArr = document.querySelector(".fa-chevron-left");
 const rightArr = document.querySelector(".fa-chevron-right");
 const carousel = document.querySelector(".carousel");
 let menuItem = document.querySelectorAll(".menu_item");
+let scrollState = 1; // state=1時menu bar跟著scroll action移動, 點擊左邊menu item時讓state=0
 
 // change page
 for (let i = 0; i < menuItem.length; i++) {
@@ -22,7 +23,14 @@ leftArr.addEventListener("click", carouselSlideLeft);
 rightArr.addEventListener("click", carouselSlideRight);
 
 function moveMenuBar() {
+  scrollState = 0;
+
   bar.style.top = page * 32 + 2 + "px";
+
+  // 動畫完成後再改為1，才不會影響動畫
+  window.setTimeout(() => {
+    scrollState = 1;
+  }, 500);
 }
 
 function changeMenuItemStyle() {
@@ -32,11 +40,21 @@ function changeMenuItemStyle() {
   menuItem[page].classList.add("menu_selected");
 }
 
+function moveMenuBarOnScroll() {
+  if (scrollState === 1) {
+    let ratio = window.pageYOffset / document.documentElement.scrollHeight;
+    bar.style.top = ratio * 160 + 2 + "px";
+    console.log("!23");
+  }
+}
 
-$(window).on("scroll", function () {
-  y = $("#menu_contact").offset().top;
-  console.log(y);
-});
+$(window).on("scroll", moveMenuBarOnScroll);
+
+// if (window.scrollY) {
+//   window.scroll(0, 0); // reset the scroll position to the top left of the document.
+// }
+
+// window.scrollByPages(1);
 
 // 按menu控制右邊畫面
 $(".menu_item").on("click", function (e) {
