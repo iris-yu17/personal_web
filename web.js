@@ -44,7 +44,6 @@ function moveMenuBarOnScroll() {
   if (scrollState === 1) {
     let ratio = window.pageYOffset / document.documentElement.scrollHeight;
     bar.style.top = ratio * 160 + 2 + "px";
-    console.log("!23");
   }
 }
 
